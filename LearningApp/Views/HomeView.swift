@@ -12,56 +12,26 @@ struct HomeView: View {
     @EnvironmentObject var model: ContentModel
     
     var body: some View {
-        ScrollView{
-            LazyVStack{
-                ForEach(model.modules) { module in
-                    //Learning card
-                    ZStack{
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .aspectRatio(CGSize(width: 335, height: 175), contentMode: .fit)
-                        HStack{
-                            //Image
-                            Image("swift")
-                                .resizable()
-                                .frame(width: 116, height: 116)
-                                .clipShape(Circle())
-                            Spacer()
-                            //Text
-                            VStack (alignment: .leading, spacing: 10){
-                                //Headline
-                                Text("Learn Swift")
-                                    .bold()
-                                //description
-                                Text("Some Description")
-                                    .padding(.bottom, 20)
-                                    .font(.caption)
-                                //Icons
-                                HStack{
-                                    //Number of lessons
-                                    Image(systemName: "text.book.closed")
-                                        .resizable()
-                                        .frame(width: 15, height: 15)
-                                    Text("20 Lessons")
-                                        .font(.caption)
-                                    //Time
-                                    Image(systemName: "clock")
-                                        .resizable()
-                                        .frame(width: 15, height: 15)
-                                    Text("3 Hours")
-                                        .font(.caption)
-                                }
+        
+        NavigationView {
+            VStack (alignment: .leading){
+                Text("What do you want to do today?")
+                    .padding(.leading, 20)
+                ScrollView{
+                    LazyVStack{
+                        ForEach(model.modules) { module in
+                            VStack (spacing: 20) {
+                            //Learning card
+                            HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) lessons", time: module.content.time)
+                            //Test card
+                            HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) questions", time: module.test.time)
                             }
-                        }
-                        .padding(.horizontal, 20)
+                            }
                     }
-                    //Test card
-                    
+                    .padding()
                 }
             }
-            .padding()
+            .navigationTitle("Get Started")
         }
     }
 }
