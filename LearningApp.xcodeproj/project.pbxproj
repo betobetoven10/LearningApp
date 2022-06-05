@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A39678D284CF5D300D324E1 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39678C284CF5D300D324E1 /* ContentDetailView.swift */; };
+		8A994ECF284D554F0085333A /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A994ECE284D554F0085333A /* RectangleCard.swift */; };
 		8AAB3879284D04800068CA44 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAB3878284D04800068CA44 /* AVKit.framework */; };
 		8AAB387B284D05BE0068CA44 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB387A284D05BE0068CA44 /* Constants.swift */; };
 		8AAB38B3284D14140068CA44 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAB38B2284D14140068CA44 /* CodeTextView.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		8A39678C284CF5D300D324E1 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		8A994ECE284D554F0085333A /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		8AAB3878284D04800068CA44 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		8AAB387A284D05BE0068CA44 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8AAB38B2284D14140068CA44 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				8AE786D72842D02A00BBF3FD /* ContentViewRow.swift */,
 				8A39678C284CF5D300D324E1 /* ContentDetailView.swift */,
 				8AAB38B2284D14140068CA44 /* CodeTextView.swift */,
+				8A994ECE284D554F0085333A /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				8AAB38B3284D14140068CA44 /* CodeTextView.swift in Sources */,
 				8AE786CC2842B30D00BBF3FD /* ContentModel.swift in Sources */,
 				8AE786D22842B73600BBF3FD /* Models.swift in Sources */,
+				8A994ECF284D554F0085333A /* RectangleCard.swift in Sources */,
 				8AAB387B284D05BE0068CA44 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
