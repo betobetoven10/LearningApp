@@ -14,7 +14,12 @@ class ContentModel: ObservableObject {
     
     //Current module
     @Published var currentModule: Module?
+    
+    @Published var currentLesson: Lesson?
+    
+    
     var currentModuleIndex = 0
+    var currentLessonIndex = 0
     
     var styleData: Data?
     init() {
@@ -68,5 +73,18 @@ class ContentModel: ObservableObject {
         
         //Set the current module
         currentModule = modules[currentModuleIndex]
+    }
+    
+    func beginLesson(_ lessonIndex:Int){
+        //Find the index for this lesson ID
+        if lessonIndex < currentModule!.content.lessons.count {
+            currentLessonIndex = lessonIndex
+        } else
+        {
+            currentLessonIndex = 0
+        }
+        
+        //Set the current module
+        currentLesson = currentModule!.content.lessons[currentLessonIndex]
     }
 }

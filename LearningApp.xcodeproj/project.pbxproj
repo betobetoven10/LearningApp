@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A39678D284CF5D300D324E1 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39678C284CF5D300D324E1 /* ContentDetailView.swift */; };
 		8AE786B92842B26500BBF3FD /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE786B82842B26500BBF3FD /* LearningApp.swift */; };
 		8AE786BB2842B26500BBF3FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE786BA2842B26500BBF3FD /* HomeView.swift */; };
 		8AE786BD2842B26800BBF3FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE786BC2842B26800BBF3FD /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A39678C284CF5D300D324E1 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		8AE786B52842B26500BBF3FD /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE786B82842B26500BBF3FD /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		8AE786BA2842B26500BBF3FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				8AE786D32842C49C00BBF3FD /* HomeViewRow.swift */,
 				8AE786D52842C88600BBF3FD /* ContentView.swift */,
 				8AE786D72842D02A00BBF3FD /* ContentViewRow.swift */,
+				8A39678C284CF5D300D324E1 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				8AE786BB2842B26500BBF3FD /* HomeView.swift in Sources */,
 				8AE786D42842C49C00BBF3FD /* HomeViewRow.swift in Sources */,
 				8AE786D62842C88600BBF3FD /* ContentView.swift in Sources */,
+				8A39678D284CF5D300D324E1 /* ContentDetailView.swift in Sources */,
 				8AE786B92842B26500BBF3FD /* LearningApp.swift in Sources */,
 				8AE786D82842D02A00BBF3FD /* ContentViewRow.swift in Sources */,
 				8AE786CC2842B30D00BBF3FD /* ContentModel.swift in Sources */,
