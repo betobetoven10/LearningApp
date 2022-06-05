@@ -14,18 +14,19 @@ struct ContentView: View {
             LazyVStack{
                 if model.currentModule != nil {
                     ForEach(0..<model.currentModule!.content.lessons.count){ index in
-                    //Lesson card
+                        //Lesson card
                         NavigationLink {
                             ContentDetailView()
+                            //Different sintax
                                 .onAppear {
                                     model.beginLesson(index)
                                 }
                         } label: {
                             ContentViewRow(index: index)
-
+                            
                         }
-
-                }
+                        
+                    }
                 }
             }
             .padding()
