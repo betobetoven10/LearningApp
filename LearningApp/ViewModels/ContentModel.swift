@@ -21,6 +21,8 @@ class ContentModel: ObservableObject {
     //Current lesson explanation
     @Published var lessonDescription = NSAttributedString()
     
+    //Current selected content and test
+    @Published var currentContentSelected:Int?
     
     var currentModuleIndex = 0
     var currentLessonIndex = 0

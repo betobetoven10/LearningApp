@@ -40,6 +40,23 @@ struct ContentDetailView: View {
                     }
                 }
 
+            } else {
+                //Show the complte lesson
+                Button {
+                    model.currentContentSelected = nil
+                } label: {
+                    ZStack{
+                        Rectangle()
+                            .frame(height: 48)
+                            .foregroundColor(.green)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                        
+                    Text("Complete")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                }
             }
     }
         .padding()
